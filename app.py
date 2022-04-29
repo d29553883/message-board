@@ -76,3 +76,4 @@ def get_message():
 
 
 app.run(host='0.0.0.0', port=3306)
+# app.run(debug=True, port=3000)

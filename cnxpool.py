@@ -1,4 +1,5 @@
-import mysql.connector.pooling
+
+from mysql.connector import pooling
 import os
 from dotenv import load_dotenv
 
@@ -14,7 +15,7 @@ dbconfig={
     "database" : "website",
 }
 
-cnxpool=mysql.connector.pooling.MySQLConnectionPool(
+cnxpool=pooling.MySQLConnectionPool(
     pool_name = "mypool",
     pool_size = 20,
     **dbconfig
